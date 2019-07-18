@@ -1,0 +1,16 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: spring-cloud-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/LesliePie/spring-cloud-study
+          search-paths: config-repo
+          default-label: master
+          strict-host-key-checking: false
+          ignore-local-ssh-settings: true
+          private-key:
+
