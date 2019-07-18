@@ -1,6 +1,7 @@
 package com.study.cloud.clientconfig.controller;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @create: 2019-07-18 16:44
  **/
 @RestController
+@RefreshScope
 public class HelloController {
     @Value("${test.hello}")
     private String hello;
