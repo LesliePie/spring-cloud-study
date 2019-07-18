@@ -1,8 +1,8 @@
 spring:
   application:
-    name: node1
+    name: node2
 server:
-  port: 9001
+  port: 9002
 eureka:
   client:
     service-url:
