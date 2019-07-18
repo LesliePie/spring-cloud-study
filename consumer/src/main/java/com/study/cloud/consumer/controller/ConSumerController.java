@@ -20,7 +20,7 @@ public class ConSumerController {
 
 
     @RequestMapping(value = "/hello/{name}")
-    public String index(@PathVariable(value = "name") String name){
+    public String index(@PathVariable(value = "name") String name) {
         return helloRemote.hello(name);
     }
 

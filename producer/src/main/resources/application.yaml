@@ -1,6 +1,6 @@
 spring:
   application:
-    name: spring-cloud-produce
+    name: node1
 server:
   port: 9000
 eureka:
