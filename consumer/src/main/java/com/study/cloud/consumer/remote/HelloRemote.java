@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * @program: springCloud
- * @description:
+ * @description: feign调用实现
  * @author: Leslie
  * @create: 2019-07-18 09:35
  **/

@@ -8,14 +8,16 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @program: springCloud
- * @description:
+ * @description: web层调用远程服务
  * @author: Leslie
  * @create: 2019-07-18 09:39
  **/
 @RestController
 public class ConSumerController {
+
     @Autowired
     private HelloRemote helloRemote;
+
 
     @RequestMapping(value = "/hello/{name}")
     public String index(@PathVariable(value = "name") String name){
